@@ -1,0 +1,6 @@
+rootProject.name = 'telegram'
+include 'api'
+include 'service'
+include 'data'
+include 'common'
+

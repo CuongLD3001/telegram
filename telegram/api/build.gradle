@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+group 'vn.tripi.message'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+dependencies {
+    implementation project(":common")
+    implementation project(":data")
+}
+
+test {
+    useJUnitPlatform()
+}
